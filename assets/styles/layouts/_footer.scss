@@ -1,0 +1,132 @@
+.footer {
+  background-image: url(../images/footer-image.jpg);
+  background-position: top left;
+  background-size: cover;
+  &__top {
+    background: $black_75;
+    padding-bottom: 3rem;
+    @media screen and (max-width: 767px) {
+      padding-bottom: 1rem;
+    }
+    &__widget {
+      padding-top: 3rem;
+      @media screen and (max-width: 767px) {
+        padding-bottom: 0rem;
+        padding-top: 2rem;
+      }
+      color: $color_silver_chalice_approx;
+      font-size: .85rem;
+      &__title {
+        text-transform: uppercase;
+        color: $white;
+        font-weight:900;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      &__menurow {
+        list-style: none;
+        text-transform: uppercase;
+        padding: 0;
+        &__list {
+          &__link {
+            color: $color_silver_chalice_approx;
+            text-decoration: none;
+            margin-bottom: .45rem;
+            display: block;
+            &:hover {
+              color: $color_silver_chalice_approx;
+            }
+            &:focus {
+              color: $color_silver_chalice_approx;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__middle {
+    background: $black_92;
+    &__social {
+      padding: 1rem 0;
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+      &__links {
+        text-decoration: none !important;
+      }
+    }
+    &__copyright {
+      color: $color_mountain_mist_approx;
+      padding: 1rem 0;
+      font-size: .78rem;
+    }
+  }
+  &__bottom {
+    .row {
+      @media screen and (max-width:767px) {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &__link {
+      display: block;
+      padding: 1.5rem .80rem 1.5rem 2.65rem;
+      @media screen and (min-width:1600px) {
+        padding-left: 4.5rem;
+      }
+      text-transform: uppercase;
+      background: $color_bay_of_many_approx;
+      color: $white;
+      text-decoration: none !important;
+      font-size: .78rem;
+      @media screen and (min-width:768px) {
+        border-right: 1px solid $white;
+      }
+      @media screen and (max-width:767px) {
+        border-bottom: 1px solid $white;
+      }
+      &__content {
+        position: relative;
+        &:before {
+          font-family: FontAwesome;
+          content: "\f178";
+          display: block;
+          position: absolute;
+          top: -0.25rem;
+          left: -1.5rem;
+          font-size: 1rem;
+          @media screen and (min-width:1600px) {
+            top: -.25rem;
+            left: -2rem;
+          }
+        }
+      }
+      &:hover {
+        color: $white;
+      }
+      &:focus {
+        color: $white;
+      }
+      &--first {
+        text-align:center;
+        border-right: none;
+      }
+      &--last {
+        border-right: none;
+        border-bottom: none;
+      }
+      &--whitebackground {
+        background: $white;
+        color: $color_concord_approx;
+        &:hover {
+          color: $color_concord_approx;
+        }
+        &:focus {
+          color: $color_concord_approx;
+        }
+      }
+    }
+
+  }
+}

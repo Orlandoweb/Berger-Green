@@ -1,0 +1,399 @@
+.slider__row {
+  margin-top: -117px;
+  padding-top: 10rem;
+  padding-bottom: 0rem;
+  background-image: url(../images/slider-bg.jpg);
+  background-position: top left;
+  background-size: cover;
+  background-attachment: fixed;
+  &__leftcol {
+  }
+  &__rightcol {
+    background-image: url('../images/slider-box-background.png');
+    background-color: $color_black_pearl_approx_89;
+    background-size: 420px 348px;
+    background-repeat: no-repeat;
+    background-position: 12px 13px;
+    padding: 3rem 3rem;
+    @media screen and (max-width: 767px) {
+      padding: 2rem 2rem;
+      background-size: 322px 294px;
+    }
+    h3 {
+      font-family:$sage-second-font;
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+      @media screen and (max-width: 767px) {
+        font-size: 1.7rem;
+      }
+    }
+    h2 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 3rem;
+      letter-spacing:2px;
+      @media screen and (max-width: 767px) {
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      font-size: 1.25rem;
+      @media screen and (max-width: 767px) {
+        font-size: 1rem;
+      }
+    }
+
+    a {
+      font-weight: 400 !important;
+       &:hover {
+         color: $color_selective_yellow_approx;
+         border-color: $color_selective_yellow_approx;
+       }
+    }
+  }
+}
+
+.content_form_blockquote__row {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: url(../images/content_form_blockquote-bg.jpg);
+  background-position: top left;
+  background-size: cover;
+  background-attachment: fixed;
+  &__leftcol {
+    &__title {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 2.49rem;
+      color: $color_bay_of_many_approx;
+      font-weight: 700;
+      text-align: left;
+      @media screen and (max-width: 767px) {
+        font-size: 1.49rem;
+      }
+    }
+    p {
+      font-family:$sage-second-font;
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      @media screen and (max-width: 767px) {
+        font-size: 1.2rem;
+        line-height: 1.45rem;
+      }
+    }
+  }
+  &__rightcol {
+    text-align: center;
+    &__title {
+      font-size: 2.89rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 900;
+      color: $color_fuscous_gray_approx;
+      @media screen and (max-width: 767px) {
+        font-size: 1.49rem;
+      }
+    }
+    &__tagline {
+      font-size: 2.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 400;
+      color: $color_fuscous_gray_approx;
+      @media screen and (max-width: 767px) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.video_and_content__row {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  background-image: url(../images/video_and_content.jpg);
+  background-position: top left;
+  background-size: cover;
+  background-attachment: fixed;
+  &__title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.89rem;
+    color: $white;
+    font-weight: 700;
+    @media screen and (max-width: 767px) {
+      font-size: 1.49rem;
+    }
+  }
+  &__rightcol {
+    &__title {
+      font-size: 1.79rem;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 3px;
+      @media screen and (max-width: 767px) {
+        font-size: 1.39rem;
+      }
+    }
+  }
+}
+
+.ourpraticearea__row {
+  padding-top: 3.5rem;
+  padding-bottom: 4.5rem;
+  background-image: url(../images/ourpratice-area-bg.jpg);
+  background-position: top left;
+  background-size: cover;
+  background-attachment: fixed;
+  &__title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.89rem;
+    color: $color_chicago_approx;
+    font-weight: 700;
+    @media screen and (max-width: 767px) {
+      font-size: 1.49rem;
+    }
+  }
+  &__col {
+    &__title {
+      padding: 1.2rem 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      background: $color_bay_of_many_approx;
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      text-align: center;
+      color: $white;
+      outline: 1px solid $white_35;
+      outline-offset: -4px;
+    }
+    &__content {
+      color: $color_bay_of_many_approx;
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      &__list {
+        list-style: none;
+        padding: 1.35rem 0 0;
+        font-weight: 600;
+        li {
+          border-bottom: 1px solid $color_mountain_mist_approx;
+          padding-bottom: .85rem;
+          margin-bottom: .85rem;
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.content_and_image__row {
+  padding-top: 3.5rem;
+  padding-bottom: 4.5rem;
+  background-image: url(../images/content_and_image-bg.jpg);
+  background-position: top left;
+  background-size: cover;
+  background-attachment: fixed;
+  &__title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.89rem;
+    color: $white;
+    font-weight: 700;
+    @media screen and (max-width: 767px) {
+      font-size: 1.49rem;
+    }
+  }
+  &__leftcol {
+    &__title {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 2.49rem;
+      color: $white;
+      font-weight: 700;
+      @media screen and (max-width: 767px) {
+        font-size: 1.49rem;
+      }
+    }
+    &__content {
+      font-size: 1.2rem;
+      color: $white;
+    }
+  }
+}
+
+.fullwidthcontent__row {
+  padding-top: 3.5rem;
+  padding-bottom: 4.5rem;
+  background-image: url(../images/howwecanhelp.jpg);
+  background-position: top left;
+  background-size: cover;
+  background-attachment: fixed;
+  @media screen and (max-width: 767px) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  &__title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.89rem;
+    color: $color_chicago_approx;
+    font-weight: 700;
+    @media screen and (max-width: 767px) {
+      font-size: 1.49rem;
+    }
+  }
+  &__description {
+    color: $color_mountain_mist_approx;
+    font-size: 1.23rem;
+  }
+  &__rightcol__content {
+    font-size: 1.2rem;
+  }
+  &__fullcol__content {
+    font-size: 1.2rem;
+  }
+}
+
+
+.blog_posts__row {
+  padding-top: 3.5rem;
+  padding-bottom: 4.5rem;
+  background-image: url(../images/top_stories.jpg);
+  background-position: top left;
+  background-size: cover;
+  background-attachment: fixed;
+  @media screen and (max-width: 767px) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  &__title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.89rem;
+    color: $color_chicago_approx;
+    font-weight: 700;
+    @media screen and (max-width: 767px) {
+      font-size: 1.49rem;
+    }
+  }
+  &__col {
+    &__image {
+      outline: 1px solid $white;
+      outline-offset: -4px;
+      margin-bottom: 10px;
+      max-width: 100%;
+    }
+    &__link {
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $color_bay_of_many_approx;
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      display: block;
+    }
+    &__meta {
+      color: $color_stack_approx;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.2rem;
+      a {
+        color: $color_stack_approx;
+      }
+    }
+    &__content {
+      color: $black;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.4rem;
+    }
+
+  }
+}
+
+.experiencedattorney__row {
+  padding-top: 2.5rem;
+  padding-bottom: 35rem;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 2.5rem;
+  }
+  background-image: url(../images/experiencedattorney.jpg);
+  background-position: top left;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &__team {
+    position: absolute;
+    @media screen and (max-width: 767px) {
+      position: relative;
+    }
+  }
+  &__title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.89rem;
+    color: $white;
+    font-weight: 700;
+    @media screen and (max-width: 767px) {
+      font-size: 1.49rem;
+    }
+  }
+  &__leftcol {
+    &__content {
+      color: $white;
+      font-size: .95rem;
+      line-height: 1.5rem;
+    }
+  }
+  &__rightcol {
+    &__image {
+      outline: 1px solid $white;
+      outline-offset: -4px;
+    }
+  }
+}
+
+.getintouch__row {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  background-image: url(../images/get-in-touch-bg.jpg);
+  background-position: top left;
+  background-size: cover;
+  background-attachment: fixed;
+  @media screen and (max-width: 767px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  &__title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.89rem;
+    color: $color_chicago_approx;
+    font-weight: 700;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+      font-size: 1.49rem;
+    }
+  }
+  &__leftcol {
+    text-align: center;
+    &__title {
+      font-size: 2.89rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 900;
+      color: $color_fuscous_gray_approx;
+      @media screen and (max-width: 767px) {
+        font-size: 1.49rem;
+      }
+    }
+    &__tagline {
+      font-size: 2.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 400;
+      color: $color_fuscous_gray_approx;
+      @media screen and (max-width: 767px) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  &__rightcol {
+    &__map {
+      outline: 1px solid $white;
+      outline-offset: -4px;
+    }
+  }
+}

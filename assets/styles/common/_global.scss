@@ -1,0 +1,167 @@
+* {
+  transition: all linear 0.2s;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: $sage-font, $sage-fallback-font;
+  font-size: .95rem;
+}
+
+p {
+  font-family: $sage-font, $sage-fallback-font;
+  font-size: 1rem;
+}
+.hr {
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  &--blue {
+    border-color: $color_bay_of_many_approx;
+  }
+  &--white {
+    border-color: $white;
+  }
+  &--white15 {
+    border-color: $white_15;
+  }
+  &--singleborder {
+    border-top-width: 1px;
+    border-bottom-width:1px;
+  }
+}
+
+.card {
+  &--noborder{
+    border:none;
+  }
+  &--transparent {
+    background: transparent;
+  }
+}
+
+.button {
+  padding: 1rem 4rem;
+  @media screen and (max-width: 767px) {
+    padding: 1rem .76rem;
+    display: block;
+  }
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  color: inherit;
+  text-transform: uppercase;
+  &--white {
+    color: $white;
+    border: 2px solid $white;
+  }
+  &--blue {
+    color: $color_bay_of_many_approx;
+    border: 2px solid $color_bay_of_many_approx;
+  }
+  &:hover {
+    color: $color_selective_yellow_approx;
+    border-color: $color_selective_yellow_approx;
+  }
+}
+
+.blockquote {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.89rem;
+  font-style: italic;
+  line-height: 4rem;
+  @media screen and (max-width: 767px) {
+    font-size: 1.49rem;
+    line-height: 2.4rem;
+  }
+  &--blue {
+    color: $color_bay_of_many_approx;
+  }
+  &--noborder {
+    border:none;
+  }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $color_bay_of_many_approx;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $color_bay_of_many_approx;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $color_bay_of_many_approx;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $color_bay_of_many_approx;
+}
+
+.loader-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2002;
+  display: block;
+  > {
+    .loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 2001;
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate(-50%, -50%);
+    }
+    .loader-logo {
+      margin-top: -25px;
+    }
+    .loader-ellipsis {
+      margin-top: 25px;
+    }
+    .loader-section {
+      position: fixed;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      z-index: 2000;
+      background: $color_bay_of_many_approx;
+      &.loader-section-left {
+        left: 0;
+      }
+      &.loader-section-right {
+        right: 0;
+      }
+    }
+  }
+}
+.no-js .loader-wrapper {
+  display: none;
+}
+.loaded .loader-wrapper {
+  visibility: hidden;
+  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  transform: translateY(-100%);
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all 0.3s 0.6s ease-out;
+  > {
+    .loader {
+      opacity: 0;
+      //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: all 0.3s ease-out;
+    }
+    .loader-section {
+      //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: all 0.3s 0.3s ease-out;
+      &.loader-section-left {
+        //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: translateX(-100%);
+      }
+      &.loader-section-right {
+        //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: translateX(100%);
+      }
+    }
+  }
+}
