@@ -28,10 +28,12 @@
 
   function sage_stickyheader() {
     $(window).scroll(function () {
-      if ( $(this).scrollTop() > 200 && !$('header').hasClass('sticky') ) {
-        $('header').addClass('sticky');
-      } else if ( $(this).scrollTop() <= 200 ) {
-        $('header').removeClass('sticky');
+      if($(window).width() > 767) {
+          if ( $(this).scrollTop() > 200 && !$('header').hasClass('sticky') ) {
+              $('header').addClass('sticky');
+          } else if ( $(this).scrollTop() <= 200 ) {
+              $('header').removeClass('sticky');
+          }
       }
     });
   }

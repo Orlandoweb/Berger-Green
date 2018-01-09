@@ -1,7 +1,29 @@
 .header {
   background-color: $black_25;
   &.sticky {
-    background-color: $black;
+    background-color: $white;
+    .non-sticky-header {
+      display: none !important;
+    }
+    .sticky-header {
+      display: block !important;
+      .menu {
+        li {
+          a {
+            color: $black_75;
+            &:hover {
+              color: $color_selective_yellow_approx;
+              border-bottom: 1px solid $color_selective_yellow_approx;
+            }
+          }
+          &.active {
+            a {
+              color: $color_selective_yellow_approx;
+            }
+          }
+        }
+      }
+    }
   }
   &.navbar-opened {
     background-color: $black;
