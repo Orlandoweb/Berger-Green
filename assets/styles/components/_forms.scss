@@ -56,6 +56,12 @@
       background-position: 16px 11px;
       background-repeat: no-repeat;
     }
+    +.wpcf7-not-valid-tip {
+      display: none !important;
+    }
+    &.wpcf7-not-valid {
+      border-color: $red !important;
+    }
   }
   &__textarea {
     display: block;

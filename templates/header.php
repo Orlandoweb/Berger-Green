@@ -22,6 +22,8 @@ $sage_header_text = isset($sage_header_text) ? $sage_header_text : 'Call Today f
           <nav class="navbar navbar-default navbar-toggleable-md header__col__right__menu nav-primary p-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div id="navbar" class="navbar-collapse collapse">
               <?php

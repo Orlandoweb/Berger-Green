@@ -2,6 +2,9 @@
   background-image: url(../images/footer-image.jpg);
   background-position: top left;
   background-size: cover;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
   &__top {
     background: $black_75;
     padding-bottom: 3rem;
@@ -103,10 +106,12 @@
         }
       }
       &:hover {
-        color: $white;
+        color: $white !important;
+        background: $black !important;
       }
       &:focus {
-        color: $white;
+        color: $white !important;
+        background: $black !important;
       }
       &--first {
         text-align:center;
@@ -120,10 +125,12 @@
         background: $white;
         color: $color_concord_approx;
         &:hover {
-          color: $color_concord_approx;
+          color: $white !important;
+          background: $black !important;
         }
         &:focus {
-          color: $color_concord_approx;
+          color: $white !important;
+          background: $black !important;
         }
       }
     }

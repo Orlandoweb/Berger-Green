@@ -18,7 +18,6 @@ $cta = get_sub_field('cta', false, false);
 						$title = get_the_title();
 						$featured_image = get_the_post_thumbnail_url();
 						$date = get_the_date();
-						$author = get_the_author();
 						$category = get_the_category_list(', ');
 						$content = get_the_excerpt();
 						$link = get_permalink();
@@ -30,7 +29,6 @@ $cta = get_sub_field('cta', false, false);
                             <hr/>
                             <p class="blog_posts__row__col__meta">
                             <span class="d-block">Published: '.$date.'</span>
-                            <span class="d-block">Author: '.$author.'</span>
                             <span class="d-block">Category: '.$category.'</span>
                             </p>
                             <hr/>

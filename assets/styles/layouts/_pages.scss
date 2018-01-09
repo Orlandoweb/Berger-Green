@@ -1,9 +1,11 @@
 .slider__row {
-  margin-top: -117px;
+  @media screen and (max-width: 767px) {
+    margin-top: -117px;
+  }
   padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url(../images/slider-bg.jpg);
-  background-position: top left;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   &__leftcol {
@@ -49,6 +51,17 @@
          border-color: $color_selective_yellow_approx;
        }
     }
+  }
+}
+
+.ourattorneys__row {
+  padding-top: 1rem;
+  background-image: url(../images/ourattorneys-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  h3 {
+    font-weight: 900;
   }
 }
 
@@ -107,7 +120,7 @@
 
 .video_and_content__row {
   padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: .5rem;
   background-image: url(../images/video_and_content.jpg);
   background-position: top left;
   background-size: cover;
@@ -117,6 +130,7 @@
     font-size: 2.89rem;
     color: $white;
     font-weight: 700;
+    text-shadow: 2px 2px 0px $black_25;
     @media screen and (max-width: 767px) {
       font-size: 1.49rem;
     }
@@ -129,6 +143,14 @@
       letter-spacing: 3px;
       @media screen and (max-width: 767px) {
         font-size: 1.39rem;
+      }
+    }
+  }
+  &__vidoes {
+    &__col {
+      cursor:pointer;
+      iframe {
+        pointer-events: none;
       }
     }
   }
@@ -146,6 +168,7 @@
     font-size: 2.89rem;
     color: $color_chicago_approx;
     font-weight: 700;
+    text-shadow: 2px 2px 0px $black_25;
     @media screen and (max-width: 767px) {
       font-size: 1.49rem;
     }
@@ -197,6 +220,7 @@
     font-size: 2.89rem;
     color: $white;
     font-weight: 700;
+    text-shadow: 2px 2px 0px $black_25;
     @media screen and (max-width: 767px) {
       font-size: 1.49rem;
     }
@@ -234,6 +258,7 @@
     font-size: 2.89rem;
     color: $color_chicago_approx;
     font-weight: 700;
+    text-shadow: 2px 2px 0px $black_25;
     @media screen and (max-width: 767px) {
       font-size: 1.49rem;
     }
@@ -267,6 +292,7 @@
     font-size: 2.89rem;
     color: $color_chicago_approx;
     font-weight: 700;
+    text-shadow: 2px 2px 0px $black_25;
     @media screen and (max-width: 767px) {
       font-size: 1.49rem;
     }
@@ -327,6 +353,7 @@
     font-size: 2.89rem;
     color: $white;
     font-weight: 700;
+    text-shadow: 2px 2px 0px $black_25;
     @media screen and (max-width: 767px) {
       font-size: 1.49rem;
     }
@@ -363,6 +390,7 @@
     color: $color_chicago_approx;
     font-weight: 700;
     text-align: center;
+    text-shadow: 2px 2px 0px $black_25;
     @media screen and (max-width: 767px) {
       font-size: 1.49rem;
     }

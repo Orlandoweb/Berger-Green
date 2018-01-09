@@ -2,7 +2,7 @@
 use Roots\Sage\Assets;
 $title = get_sub_field('title');
 $form  = get_sub_field('form');
-$map = get_sub_field('map');
+$map = get_sub_field('map',false,false);
 ?>
 <div class="getintouch__row wow fadeInUp" data-wow-duration="2s">
 	<div class="container">
@@ -17,9 +17,7 @@ $map = get_sub_field('map');
 			</div>
 			<div class="col-12 col-md-6">
 				<div class="getintouch__row__rightcol">
-					<figure>
-						<img class="getintouch__row__rightcol__map d-block img-fluid" src="<?= esc_url($map); ?>" />
-					</figure>
+					<?= $map;?>
 				</div>
 			</div>
 		</div>

@@ -1,11 +1,23 @@
 .header {
   background-color: $black_25;
+  &.sticky {
+    background-color: $black;
+  }
+  &.navbar-opened {
+    background-color: $black;
+  }
   padding: 1rem 0rem;
   z-index: 2;
   position: relative;
   background-image:url(../images/header-bottom-bg.png);
   background-position: bottom center;
   background-repeat: repeat-x;
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+  }
   @media screen and (max-width: 767px) {
     text-align: center;
   }
@@ -34,10 +46,23 @@
     list-style: none;
     padding: 0px;
     margin: 0px;
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      width: 100%;
+      background: $black;
+      left: 0px;
+      top: 100px;
+    }
     li {
       display: inline-block;
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
       &:not(:first-child) {
         margin-left: 25px;
+        @media screen and (max-width: 767px) {
+          margin-left: 0px;
+        }
       }
       a {
         font-size: 15px;
@@ -45,6 +70,10 @@
         color: $white;
         padding-bottom: 3px;
         display: block;
+        @media screen and (max-width: 767px) {
+          display: inline-block;
+          margin-bottom: 20px;
+        }
         text-decoration: none !important;
         border-bottom: 1px solid transparent;
         &:hover {
@@ -58,6 +87,11 @@
           border-bottom: 1px solid $color_selective_yellow_approx;
         }
       }
+    }
+  }
+  .col-2 {
+    @media screen and (max-width: 767px) {
+      position: static;
     }
   }
 }

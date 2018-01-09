@@ -26,22 +26,42 @@
     }
   }
 
-  function sage_scrollbar() {
-    if(!winXS) {
-      $("html").niceScroll({
-        cursorwidth: "10px",
-        cursorborder: "0px",
-        cursorborderradius: "0px",
-        scrollspeed: 10,
-        cursorcolor: "#ffb400",
-        cursoropacitymin: 1,
-      });
-    }
+  function sage_stickyheader() {
+    $(window).scroll(function () {
+      if ( $(this).scrollTop() > 200 && !$('header').hasClass('sticky') ) {
+        $('header').addClass('sticky');
+      } else if ( $(this).scrollTop() <= 200 ) {
+        $('header').removeClass('sticky');
+      }
+    });
+  }
+
+  function sage_navbartoggler() {
+    $('.navbar-toggler').click(function () {
+      if($('header').hasClass('navbar-opened')) {
+        $('header').removeClass('navbar-opened');
+      } else {
+        $('header').addClass('navbar-opened');
+      }
+    });
   }
 
   function sage_init() {
-    new WOW().init();
     $("a[href*='#']").mPageScroll2id();
+    sage_stickyheader();
+    sage_navbartoggler();
+  }
+
+  function sage_slider() {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      animationLoop: false,
+      itemWidth: 210,
+      itemMargin: 10,
+      directionNav: false,
+      controlNav: false,
+      move: 1,
+    });
   }
 
   function sage_preloader() {
@@ -53,6 +73,13 @@
     }, 5000);
   }
 
+  function sage_switch_videos() {
+    $('.video_and_content__row__vidoes__col').click(function () {
+      var videosrc = $(this).find('iframe').attr('src');
+      $('.video-display').attr('src',videosrc);
+    });
+  }
+
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
   var Sage = {
@@ -61,9 +88,10 @@
       init: function() {
         // JavaScript to be fired on all pages
         sage_initWindows();
-        sage_scrollbar();
         sage_init();
+        sage_slider();
         sage_preloader();
+        sage_switch_videos();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -76,6 +104,7 @@
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
+
       }
     },
     // About us page, note the change from about-us to about_us.

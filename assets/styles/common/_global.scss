@@ -60,6 +60,11 @@ p {
   &--blue {
     color: $color_bay_of_many_approx;
     border: 2px solid $color_bay_of_many_approx;
+    &:hover {
+      color: $white !important;
+      border-color: $color_bay_of_many_approx !important;
+      background: $color_bay_of_many_approx !important;
+    }
   }
   &:hover {
     color: $color_selective_yellow_approx;
@@ -96,6 +101,23 @@ p {
 :-moz-placeholder { /* Firefox 18- */
   color: $color_bay_of_many_approx;
 }
+
+.wpcf7-not-valid::-webkit-input-placeholder {
+  color: $red;
+}
+
+.wpcf7-not-valid::-moz-placeholder {
+  color: $red;
+}
+
+.wpcf7-not-valid:-ms-input-placeholder {
+  color: $red;
+}
+
+.wpcf7-not-valid:-moz-placeholder {
+  color: $red;
+}
+
 
 .loader-wrapper {
   position: fixed;
@@ -165,3 +187,39 @@ p {
     }
   }
 }
+
+.flexslider {
+  &--transparent {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+  }
+}
+
+.wpcf7-validation-errors {
+  display: none !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  .navbar-toggler-icon {
+    width: 29px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin-top: 7px;
+  }
+}
+
+.navbar {
+  @media screen and (max-width: 767px) {
+    position: static;
+  }
+}
+
